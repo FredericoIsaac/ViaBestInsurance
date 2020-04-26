@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1 class="apresentacao">Via Best Insurance</h1>
+      <h2 class="apresentacao">O melhor seguro para si!</h2>
+      <ul class= "razao apresentacao ">
+        <li>Simplica por si.</li>
+        <li>Orienta por si.</li>
+        <li>Negoceia por si</li>
+        <li>Gere por si</li>
+      </ul>
+      <h3 class="apresentacao">Ramos de Especialidade:</h3>
+      <figure class = "imgApresentacao">
+        <figure>
+          <img src="css/images/vidaicone.png" alt="icone vida" class="iconesApresentacao">
+          <figcaption><h4>Vida</h4></figcaption>
+        </figure>
+        <figure>
+          <img src="css/images/saudeicone.png" alt="icone saude" class="iconesApresentacao">
+          <figcaption><h4>Saúde</h4></figcaption>
+        </figure>
+        <figure>
+          <img src="css/images/casaicone.png" alt="icone casa" class="iconesApresentacao">
+          <figcaption><h4>Habitação</h4></figcaption>
+        </figure>
+        <figure>
+          <img src="css/images/empresaicone.png" alt="icone empresa" class="iconesApresentacao">
+          <figcaption><h4>Empresas</h4></figcaption>
+        </figure>
+      </figure>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Section 1" class="your-active-class">
+      <div class="landing__container">
+        <h2>Sobre</h2>
+        <p>A mais de 150 anos a trabalhar na area, com transparência e atenção pelos clientes. Principal missao é encontrar o seguro certo para cada cliente com o criterio do melhor preço para as condições desejadas. Como tambem aconselhamento e gestao de carteira de seguros.</p>
+
+        <p>Trabalho arduo e prevencao de um futuro que esperamos que não aconteça mas que se acontecer estaremos ca para orientar e resolver a situação da melhor maneira para o nosso cliente. </p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Section 2">
+      <div class="landing__container">
+        <h2>Ramo Vida</h2>
+        <p>Um seguro de vida é um contrato através do qual uma seguradora aceita o risco do cliente e se compromete a restituir o capital seguro a terceiros, em caso de morte do beneficiário durante o período de vigência do contrato; ou, em caso de sobrevivência do beneficiário, no fim do período de vigência do contrato que é, geralmente, estabelecido nos 60 anos de idade.</p>
+
+        <p>Nos tempos mais dificeis estamos lá para ajudar.</p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Section 3">
+      <div class="landing__container">
+        <h2>Ramo Saúde</h2>
+        <p>Ter um seguro de saúde é uma das melhores formas de beneficiar de uma proteção ampla e completa para si e para a sua família. Entre as principais mais-valias deste plano, destaca-se o acesso a uma rede de prestadores de cuidados ajustada às suas necessidades e a celeridade das consultas e tratamentos, se compararmos com o Serviço Nacional de Saúde (SNS).</p>
+      </div>
+    </section>
+    <section id="section4" data-nav="Section 4">
+      <div class="landing__container">
+        <h2>Ramo Casa</h2>
+        <p>O Seguro Multirriscos Habitação, visa cobrir os danos causados aos imóveis destinados exclusivamente a habitação, quer sejam danos causados no Edifico e/ou ao seu Recheio, decorrentes do risco de incêndio e de diversos outros riscos.</p>
+      </div>
+    </section>
+    <section id="section5" data-nav="Section 5">
+      <div class="landing__container">
+        <h2>Ramo Empresa</h2>
+        <p>Se você tem uma empresa, você precisará de seguro. Sem ele, seu meio de vida e sustento estarão em risco. Uma perda inesperada poderia causar apuros financeiros e destruir anos de trabalho duro. Além disso, por lei, alguns seguros são obrigatórios.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <h5>Contactos</h5>
+    <h6>Morada: Av. 25 de Abril 1011, 2750-515 Cascais</h6>
+    <h6>Telemovel : 21 406 7640</h6>
+    <h6>Mail: viabestinsurance@gmail.com</h6>
+    <p>&copy Udacity</p>
+  </footer>
+<script src="js/app.js"></script>
+</body>
+</html>
